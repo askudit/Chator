@@ -26,11 +26,13 @@ It provides a simple interface for managing **Tor installation**, **hidden servi
 
 ## [*] How It Works
 
-1. On launch, the app checks for **Chocolatey** and **Tor** and installs them if missing.
+1. On launch, the app checks for **Chocolatey** and **Tor** and installs them if missing in pre-defined directories.
 2. You can start Tor as a **hidden service** with one click.
-3. Use the **file browser** to select your Python script (chat server/client).
-4. Choose **Server Mode** (`s`) or **Client Mode** (`c`).
-5. All logs and the `.onion` address are shown in the GUI.
+3. Use the given .py file in /server and start a **server**.
+4. Then with the pre-defined user list and creds they can join the server.
+5. Required `.onion` address will be shown in the chator.exe.
+
+   Happy anon
 
 ## [*] Getting Started
 
@@ -40,25 +42,18 @@ It provides a simple interface for managing **Tor installation**, **hidden servi
    git clone https://github.com/yourusername/torchat-setup.git
    cd torchat-setup
    ```
-2. Install dependencies:
+2. Install dependencies(for developers):
 
    ```bash
    pip install -r requirements.txt
    ```
-3. Run the GUI:
+## [*] For developers:
 
-   ```bash
-   python main.py
-   ```
-4. Optionally, build into an `.exe` with [auto-py-to-exe](https://pypi.org/project/auto-py-to-exe/).
-
+   This executable application was converted from .py to .exe using auto-py-to-exe, the dev's can utilize the /src/Chator.py for further development and similarly convert it to .exe using the same config.
+   
 ## [*] Requirements
 
-* Python 3.8+
-* Tor (installed automatically via Chocolatey if missing)
-* Tkinter (bundled with Python)
-* pysocks
-* stem
+* Python 3.8+(only)
 
 ## ⚠️ Notes
 
