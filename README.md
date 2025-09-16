@@ -1,13 +1,14 @@
 # TorChat Setup GUI
 
-A Python-based GUI tool to easily set up and run **Tor hidden services** and connect clients on a custom port (default: `24456`).
-It provides a simple interface for managing **Tor installation**, **hidden service creation**, and **Python chat script execution** from the same window.
+A Python-based GUI tool to run **Tor hidden services** and connect clients where you discuss under no-ones hood.
 
 ## [*] Features
 
 * [*] **Automatic dependency setup**
 
-  * Installs Chocolatey (if missing).
+  * Installs Chocolatey (if missing) in case of execution initial failure goto chocolatey.org/install or use these command in windows-powershell(admin):
+     * "Set-ExecutionPolicy Bypass -Scope Process"
+     * "Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))"
   * Installs Tor using Chocolatey.
 * [*] **Tor hidden service launcher**
 
