@@ -14,13 +14,7 @@ A Python-based GUI tool to run **Tor hidden services** and connect clients where
 
   * Starts Tor in the background on a configurable port (default: `24456`).
   * Displays generated `.onion` address directly in the GUI.
-* [*] **File browser integration**
-
-  * Browse and select a Python script (e.g., your chat server or client).
-  * Run it with automatic `s` (server) or `c` (client) input selection.
-* [*] **Real-time logging**
-
-  * Logs Tor output and script stdout/stderr in a resizable text area.
+   
 * [*] **Threaded execution**
 
   * Runs Tor and your script in separate threads to keep the GUI responsive.
